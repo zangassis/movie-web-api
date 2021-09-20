@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "18a89d1f-e763-4ab9-92cb-7355efc8bae9",
+		"name": "Movies API",
+		"description": "## Basic Operations\n\nCollection with the main methods to perform basic operations in the Movie API.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Test\",\r\n  \"director\": \"Test\",\r\n  \"genre\": \"Test\",\r\n  \"duration\": 12\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44336/Movie",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"Movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"Test\",\r\n  \"director\": \"Test\",\r\n  \"genre\": \"Test\",\r\n  \"duration\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44336/Movie/b7815bac-89a7-4d1a-9ce0-3c3f5923d847",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"Movie",
+						"b7815bac-89a7-4d1a-9ce0-3c3f5923d847"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/Movie",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"Movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/Movie/f5da978f-3243-4604-a914-dfe965d13473",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"Movie",
+						"f5da978f-3243-4604-a914-dfe965d13473"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44336/Movie/f5da978f-3243-4604-a914-dfe965d13473",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44336",
+					"path": [
+						"Movie",
+						"f5da978f-3243-4604-a914-dfe965d13473"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
